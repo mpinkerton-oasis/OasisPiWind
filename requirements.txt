@@ -1,0 +1,5 @@
+Shapely==1.5.13
+requests==2.18.4
+Flask==0.12
+pandas==0.22.0
+oasislmf==0.0.0
