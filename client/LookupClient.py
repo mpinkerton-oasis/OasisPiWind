@@ -195,7 +195,7 @@ class LookupClient(object):
         csv_data_bytes = csv_data.encode()
 
         req = urllib2.Request(self._lookup_url)
-        req.add_header('Content-Type', oasis_utils.MIME_TYPE_CSV; charset=oasis_utils.CHARSET_ENCODING_UTF8)
+        req.add_header('Content-Type', oasis_utils.MIME_TYPE_CSV, charset=oasis_utils.CHARSET_ENCODING_UTF8)
         req.add_header('Content-Length', len(csv_data_bytes))
         response = urllib2.urlopen(req, data=csv_data_bytes)
         
