@@ -204,7 +204,7 @@ class LookupClient(object):
 #
 # Invoke lookup from command line.
 #
-if __name__ = '__main__':
+if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Run a Pi Wind v1.0 exposure lookup.')
     parser.add_argument('-URL', metavar='URL', type=str, help='The lookup server URL.', required=True)
     parser.add_argument('exposure_file', metavar='exposure_file', type=str, help='The exposure data file.')
